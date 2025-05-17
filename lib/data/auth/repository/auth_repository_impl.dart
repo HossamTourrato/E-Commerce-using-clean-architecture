@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce/data/auth/models/user.dart';
-import 'package:ecommerce/data/auth/models/user_creation_req.dart';
-import 'package:ecommerce/data/auth/models/user_signin_req.dart';
-import 'package:ecommerce/data/auth/source/auth_firebase_service.dart';
-import 'package:ecommerce/domain/auth/repository/auth.dart';
-import 'package:ecommerce/service_locator.dart';
+
+import '../../../domain/auth/repository/auth.dart';
+import '../models/user.dart';
+import '../models/user_creation_req.dart';
+import '../models/user_signin_req.dart';
+import '../source/auth_firebase_service.dart';
 
 class AuthRepositoryImpl extends AuthRepository {
 
@@ -20,8 +20,8 @@ class AuthRepositoryImpl extends AuthRepository {
   }
 
   @override
-  Future<Either> signin(UserSigninReq user) async {
-     return await sl<AuthFirebaseService>().signin(user);
+  Future<Either> signIn(UserSigninReq user) async {
+     return await sl<AuthFirebaseService>().signIn(user);
   }
   
   @override

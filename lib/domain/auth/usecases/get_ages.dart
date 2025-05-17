@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce/core/usecase/usecase.dart';
-import 'package:ecommerce/domain/auth/repository/auth.dart';
-import 'package:ecommerce/service_locator.dart';
+
+
+import '../repository/auth.dart';
 
 class GetAgesUseCase implements UseCase<Either,dynamic> {
 

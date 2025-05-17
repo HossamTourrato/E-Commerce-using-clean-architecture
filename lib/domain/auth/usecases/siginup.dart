@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce/core/usecase/usecase.dart';
-import 'package:ecommerce/data/auth/models/user_creation_req.dart';
-import 'package:ecommerce/domain/auth/repository/auth.dart';
-import 'package:ecommerce/service_locator.dart';
+
+import '../../../data/auth/models/user_creation_req.dart';
+import '../repository/auth.dart';
+
 
 class SignupUseCase implements UseCase<Either,UserCreationReq> {
 
