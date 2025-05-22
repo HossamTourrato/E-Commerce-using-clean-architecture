@@ -1,9 +1,10 @@
-import 'package:ecommerce/common/helper/navigator/app_navigator.dart';
-import 'package:ecommerce/common/widgets/button/basic_app_button.dart';
-import 'package:ecommerce/core/configs/assets/app_vectors.dart';
-import 'package:ecommerce/presentation/auth/pages/siginin.dart';
+import 'package:e_commerce/presentation/auth/pages/siginin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../common/helper/navigator/app_navigator.dart';
+import '../../../common/widgets/button/basic_app_button.dart';
+import '../../../core/configs/assets/app_vectors.dart';
 
 class PasswordResetEmailPage extends StatelessWidget {
   const PasswordResetEmailPage({super.key});

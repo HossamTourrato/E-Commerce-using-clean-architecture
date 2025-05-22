@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 
 import '../../../domain/auth/repository/auth.dart';
+import '../../../service_locator.dart';
 import '../models/user.dart';
 import '../models/user_creation_req.dart';
 import '../models/user_signin_req.dart';
@@ -21,7 +22,7 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<Either> signIn(UserSigninReq user) async {
-     return await sl<AuthFirebaseService>().signIn(user);
+     return await sl<AuthFirebaseService>().signin(user);
   }
   
   @override

@@ -1,11 +1,13 @@
-import 'package:ecommerce/common/helper/navigator/app_navigator.dart';
-import 'package:ecommerce/common/widgets/appbar/app_bar.dart';
-import 'package:ecommerce/common/widgets/button/basic_app_button.dart';
-import 'package:ecommerce/data/auth/models/user_creation_req.dart';
-import 'package:ecommerce/presentation/auth/pages/gender_and_age_selection.dart';
-import 'package:ecommerce/presentation/auth/pages/siginin.dart';
+
+import 'package:e_commerce/presentation/auth/pages/siginin.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import '../../../common/helper/navigator/app_navigator.dart';
+import '../../../common/widgets/appbar/app_bar.dart';
+import '../../../common/widgets/button/basic_app_button.dart';
+import '../../../data/auth/models/user_creation_req.dart';
+import 'gender_and_age_selection.dart';
 
 class SignupPage extends StatelessWidget {
   SignupPage({super.key});

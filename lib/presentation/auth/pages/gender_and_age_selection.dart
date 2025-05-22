@@ -1,18 +1,19 @@
-import 'package:ecommerce/common/bloc/button/button_state.dart';
-import 'package:ecommerce/common/bloc/button/button_state_cubit.dart';
-import 'package:ecommerce/common/helper/bottomsheet/app_bottomsheet.dart';
-import 'package:ecommerce/core/configs/theme/app_colors.dart';
-import 'package:ecommerce/data/auth/models/user_creation_req.dart';
-import 'package:ecommerce/domain/auth/usecases/siginup.dart';
-import 'package:ecommerce/presentation/auth/bloc/age_selection_cubit.dart';
-import 'package:ecommerce/presentation/auth/bloc/ages_display_cubit.dart';
-import 'package:ecommerce/presentation/auth/bloc/gender_selection_cubit.dart';
-import 'package:ecommerce/presentation/auth/widgets/ages.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../common/bloc/button/button_state.dart';
+import '../../../common/bloc/button/button_state_cubit.dart';
+import '../../../common/helper/bottomsheet/app_bottomsheet.dart';
 import '../../../common/widgets/appbar/app_bar.dart';
 import '../../../common/widgets/button/basic_reactive_button.dart';
+import '../../../core/configs/theme/app_colors.dart';
+import '../../../data/auth/models/user_creation_req.dart';
+import '../../../domain/auth/usecases/siginup.dart';
+import '../bloc/age_selection_cubit.dart';
+import '../bloc/ages_display_cubit.dart';
+import '../bloc/gender_selection_cubit.dart';
+import '../widgets/ages.dart';
 
 class GenderAndAgeSelectionPage extends StatelessWidget {
   final UserCreationReq userCreationReq;

@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecommerce/presentation/auth/bloc/age_selection_cubit.dart';
-import 'package:ecommerce/presentation/auth/bloc/ages_display_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../bloc/age_selection_cubit.dart';
+import '../bloc/ages_display_cubit.dart';
 import '../bloc/ages_display_states.dart';
 
 class Ages extends StatelessWidget {

@@ -1,16 +1,16 @@
-import 'package:ecommerce/common/bloc/button/button_state_cubit.dart';
-import 'package:ecommerce/common/helper/navigator/app_navigator.dart';
-import 'package:ecommerce/common/widgets/appbar/app_bar.dart';
-import 'package:ecommerce/common/widgets/button/basic_reactive_button.dart';
-import 'package:ecommerce/data/auth/models/user_signin_req.dart';
-import 'package:ecommerce/domain/auth/usecases/signin.dart';
-import 'package:ecommerce/presentation/auth/pages/forgot_password.dart';
-import 'package:ecommerce/presentation/home/pages/home.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../common/bloc/button/button_state.dart';
+import '../../../common/bloc/button/button_state_cubit.dart';
+import '../../../common/helper/navigator/app_navigator.dart';
+import '../../../common/widgets/appbar/app_bar.dart';
+import '../../../common/widgets/button/basic_reactive_button.dart';
+import '../../../data/auth/models/user_signin_req.dart';
+import '../../../domain/auth/usecases/signin.dart';
+import '../../home/pages/home.dart';
+import 'forgot_password.dart';
 
 class EnterPasswordPage extends StatelessWidget {
   final UserSigninReq signinReq;
